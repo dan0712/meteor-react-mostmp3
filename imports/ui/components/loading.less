@@ -1,0 +1,115 @@
+@import '../stylesheets/utils.less';
+
+.loading {
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    overflow: hidden;
+    z-index: 10;
+    background: @color-active-background;
+    opacity: .2;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    user-select: none;
+    &.loading-sidebar {
+		top: 0;
+	    position: absolute;
+	    z-index: 11;
+	}
+	&.loading-on {
+		bottom: 0;
+		opacity: .9;
+		width: 100% !important;
+		.loading-spinner {
+			display: inline-block;
+		}
+	}
+	.loading-spinner {
+	    display: none;
+	    width: 42px;
+	    height: 42px;
+	    position: absolute;
+	    left: 50%;
+	    top: 140px;
+	    margin-left: -21px;
+		.spinner {
+			width: 42px;
+		    height: 42px;
+		    -webkit-animation: spin  0.8s infinite linear;
+		    -moz-animation: spin  0.8s infinite linear;
+		    -o-animation: spin 0.8s infinite linear;
+		    animation: spin 0.8s infinite linear;
+		    -webkit-backface-visibility: hidden;
+		    .spinner-circle {
+		    	overflow: hidden;
+			    position: absolute;
+			    left: 50%;
+			    top: 0;
+			    width: 100%;
+			    height: 100%;
+			    &:before {
+			    	content: ' ';
+				    display: inline-block;
+				    position: absolute;
+				    left: -50%;
+				    top: 0;
+				    border-radius: 100%;
+				    box-shadow: inset 0 0 0 2px @color-hover;
+				    width: 100%;
+				    height: 100%;
+			    }
+		    }
+		}				
+	}
+}
+
+@keyframes spin {
+  from {
+  -webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  -o-transform:rotate(0deg);
+  -ms-transform:rotate(0deg);
+  transform:rotate(0deg)}
+to {
+  -webkit-transform:rotate(359deg);
+  -moz-transform:rotate(359deg);
+  -o-transform:rotate(359deg);
+  -ms-transform:rotate(359deg);
+  transform:rotate(359deg)}
+}
+@-moz-keyframes spin {
+  from {
+  -moz-transform:rotate(0deg);
+  transform:rotate(0deg)}
+to {
+  -moz-transform:rotate(359deg);
+  transform:rotate(359deg)}
+}
+@-webkit-keyframes spin {
+  from {
+  -webkit-transform:rotate(0deg);
+  transform:rotate(0deg)}
+to {
+  -webkit-transform:rotate(359deg);
+  transform:rotate(359deg)}
+}
+@-ms-keyframes spin {
+  from {
+  -ms-transform:rotate(0deg);
+  transform:rotate(0deg)}
+to {
+  -ms-transform:rotate(359deg);
+  transform:rotate(359deg)}
+}
+@-o-keyframes spin {
+  from {
+  -o-transform:rotate(0deg);
+  transform:rotate(0deg)}
+to {
+  -o-transform:rotate(359deg);
+  transform:rotate(359deg)}
+}
