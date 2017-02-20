@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /user/
+Disallow: /artist/
+Disallow: /album/
+Disallow: /download-mp3/
+Disallow: /deezer/
+Disallow: /v/
