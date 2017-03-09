@@ -1,0 +1,10 @@
+{
+  "public": {
+    "analyticsSettings": {
+      "Google Analytics" : {"trackingId": "UA-87363019-1"}
+    },
+    "kadira": {
+      "debug": { "authKey": "vEXIqylCs644S9V92f"}
+    }
+  }
+}
