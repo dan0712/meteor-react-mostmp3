@@ -1,0 +1,31 @@
+{
+  "name": "spotifytube",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "fibers": "^1.0.12",
+    "fuckadblock": "^3.2.1",
+    "meteor-node-stubs": "^0.2.3",
+    "moment": "^2.13.0",
+    "path-to-regexp": "^1.5.0",
+    "react": "^0.14.8",
+    "react-autocomplete": "^1.4.0",
+    "react-dom": "^0.14.8",
+    "react-komposer": "^1.13.1",
+    "react-mounter": "^1.2.0",
+    "react-no-ssr": "^1.1.0",
+    "react-stubber": "^1.0.0",
+    "react-twitter-typeahead": "^1.1.12",
+    "react-twitter-typeahead-babel": "^1.1.6",
+    "react-typeahead": "^2.0.0-alpha.5",
+    "react-typeahead-component": "^0.9.0",
+    "spotify": "^0.3.0",
+    "spotify-uri": "^1.0.0",
+    "spotify-web-api-node": "^2.3.0",
+    "ssr": "^1.0.10",
+    "ytdl-core": "^0.7.14"
+  }
+}
